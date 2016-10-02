@@ -54,7 +54,7 @@ if (url == '/login'){
 var token = req.headers.authorization;
 jwt.verify(token, 'supersecret!',function(error,decoded){
     if(error){
-        res.status(403).end("NO NO NO! (invalid token querido!!)");
+        res.status(403).end("NO NO NO! (invalid token querido)");
     };
     if (decoded){
         next();    
