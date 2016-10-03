@@ -1,6 +1,5 @@
-cd /root/live
-rm -Rvf /root/live/project
-git clone https://github.com/acanessa/project.git
-cd project
 killall node
-nodemon server.js
+cd /root/live
+rm -Rf /root/live/project
+git clone https://github.com/acanessa/project.git
+node /root/live/project/server.js &
